@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM TO TABLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h1>HTML FORM TO TABLE</h1>
+		<label for="fname">FIRST NAME</label>
+		<input type="text" name="fname" id="fname">
+		<label for="lname">LAST NAME</label>
+		<input type="text" name="lname" id="lname">
+		<label for="email">EMAIL</label>
+		<input type="text" name="email" id="email">
+		<label for="pincode">PINCODE</label>
+		<input type="text" name="pincode" id="pincode">
+		<label for="gender">Gender</label>
+        <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        </select>
+		<label for="food">Food</label>
+        <select name="food" id="food">
+        <option value="sambar-meals">Sambar-Meals</option>
+        <option value="biriyani">Biriyani</option>
+        <option value="chicken-rice">Chicken-Rice</option>
+        <option value="gurd-rice">Gurd-rice</option>
+        <option value="lemon-rice">Lemon-rice</option>
+        </select>
+		<label for="state">State</label>
+		<select name="state" id="state">
+		<option value="tamilnadu">Tamilnadu</option>
+		<option value="kerala">Kerala</option>
+		<option value="karnataka">Karnataka</option>
+		<option value="andhrapradesh">Andhrapradesh</option>
+		</select>
+		<label for="country">Country</label>
+        <select name="country" id="country">
+        <option value="india">India</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="china">China</option>
+        <option value="srilanka">Srilanka</option>
+	</select><br><br>
+		<input type="button" name="button" id="btn" value="ADD" onclick="AddRow()">
+		<input type="button" name="button" id="btn" value="REMOVE" onclick="RemoveRow()">
+		
+
+	</div>
+
+		<table id="show" id="hide">
+			
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Age</th>
+					<th>gender</th>
+					<th>food</th>
+					<th>state</th>
+					<th>country</th>
+				</tr>
+			
+		</table>
+	
+	
+
+		<script src="script.js"></script>
+		
+</body>
+</html>
